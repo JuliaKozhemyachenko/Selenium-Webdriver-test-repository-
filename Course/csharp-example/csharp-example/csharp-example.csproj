@@ -61,7 +61,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminMenu.cs" />
+    <Compile Include="DuckPriceCheckFirefox.cs" />
+    <Compile Include="DuckPriceCheckChrome.cs" />
     <Compile Include="DuckStickerCheck.cs" />
+    <Compile Include="CountrySorting.cs" />
     <Compile Include="LoginAdmin.cs" />
     <Compile Include="MyFirstTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
