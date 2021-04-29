@@ -26,9 +26,11 @@ namespace csharp_example
             driver.Url = "http://localhost/litecart/en/";
             wait.Until(ExpectedConditions.UrlContains("http://localhost/litecart/en/"));
             var products = driver.FindElements(By.CssSelector("li.product")).Count;
-            var lasttstickers = driver.FindElements(By.CssSelector("li.product div.sticker:last-child")).Count;
-            Assert.IsTrue(products == lasttstickers);
+            var laststickers = driver.FindElements(By.CssSelector("li.product div.sticker:last-child")).Count;
+            var allstickers = driver.FindElements(By.CssSelector("li.product div.sticker")).Count;
 
+            Assert.IsTrue(allstickers == laststickers);
+            Assert.IsTrue(allstickers == products);
         }
 
         [TearDown]
