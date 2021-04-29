@@ -38,8 +38,6 @@ namespace csharp_example
 
             wait.Until(ExpectedConditions.ElementExists(By.CssSelector("td#content h1")));
 
-//            driver.FindElement(By.Name("name[en]")).SendKeys("test duck");
-
             var generatedDuckName = $"testduck{Guid.NewGuid()}";
             driver.FindElement(By.Name("name[en]")).SendKeys(generatedDuckName);
 
