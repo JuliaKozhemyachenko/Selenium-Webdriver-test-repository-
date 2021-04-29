@@ -63,6 +63,8 @@
     <Compile Include="AdminMenu.cs" />
     <Compile Include="DuckPriceCheckFirefox.cs" />
     <Compile Include="DuckPriceCheckChrome.cs" />
+    <Compile Include="NewProductCreation.cs" />
+    <Compile Include="UserRegistration.cs" />
     <Compile Include="DuckStickerCheck.cs" />
     <Compile Include="CountrySorting.cs" />
     <Compile Include="LoginAdmin.cs" />
@@ -71,6 +73,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="real_duck.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
