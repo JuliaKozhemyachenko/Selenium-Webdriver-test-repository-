@@ -60,6 +60,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasePage.cs" />
+    <Compile Include="BusketPage.cs" />
+    <Compile Include="MainPage.cs" />
+    <Compile Include="ProductPage.cs" />
+    <Compile Include="TestBase.cs" />
+    <Compile Include="WorkWithCart.cs" />
     <Compile Include="AdminMenu.cs" />
     <Compile Include="GeoZonesSorting.cs" />
     <Compile Include="DuckPriceCheckFirefox.cs" />
