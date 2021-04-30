@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminMenu.cs" />
+    <Compile Include="GeoZonesSorting.cs" />
     <Compile Include="DuckPriceCheckFirefox.cs" />
     <Compile Include="DuckPriceCheckChrome.cs" />
     <Compile Include="AddToCartCheck.cs" />
