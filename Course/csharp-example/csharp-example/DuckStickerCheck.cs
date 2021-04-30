@@ -25,12 +25,12 @@ namespace csharp_example
         {
             driver.Url = "http://localhost/litecart/en/";
             wait.Until(ExpectedConditions.UrlContains("http://localhost/litecart/en/"));
-            var products = driver.FindElements(By.CssSelector("li.product")).Count;
-            var laststickers = driver.FindElements(By.CssSelector("li.product div.sticker:last-child")).Count;
-            var allstickers = driver.FindElements(By.CssSelector("li.product div.sticker")).Count;
+            var products = driver.FindElements(By.CssSelector("li.product"));
 
-            Assert.IsTrue(allstickers == laststickers);
-            Assert.IsTrue(allstickers == products);
+            foreach (var product in products)
+            {
+                Assert.IsTrue(product.FindElements(By.CssSelector("div.sticker")).Count == 1);
+            }
         }
 
         [TearDown]
