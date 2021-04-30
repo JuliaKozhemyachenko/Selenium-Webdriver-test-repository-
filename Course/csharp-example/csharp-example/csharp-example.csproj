@@ -65,6 +65,7 @@
     <Compile Include="DuckPriceCheckFirefox.cs" />
     <Compile Include="DuckPriceCheckChrome.cs" />
     <Compile Include="AddToCartCheck.cs" />
+    <Compile Include="OpenLink.cs" />
     <Compile Include="NewProductCreation.cs" />
     <Compile Include="UserRegistration.cs" />
     <Compile Include="DuckStickerCheck.cs" />
